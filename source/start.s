@@ -85,6 +85,8 @@ _skip_gw:
     mov r10, r1     @ argv
 
     ldr r4, =0xBEEF
+    lsl r2, #16
+    lsr r2, #16
     cmp r2, r4      @ magic word
     movne r9, #0
 
