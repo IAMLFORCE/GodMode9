@@ -32,6 +32,7 @@ u8 boot11_sha256[0x20] = {
 // see: http://3dbrew.org/wiki/Memory_layout#ARM9
 static const VirtualFile vMemFileTemplates[] = {
     { "itcm.mem"         , 0x01FF8000, 0x00008000, 0xFF, 0 },
+    { "ctcert.bin"       , 0x01FFB828, 0x01FFB87F, 0xFF, 0 },
     { "arm9.mem"         , 0x08000000, 0x00100000, 0xFF, 0 },
     { "arm9ext.mem"      , 0x08100000, 0x00080000, 0xFF, VFLAG_N3DS_ONLY },
     { "boot9.bin"        , BOOT9_POS , BOOT9_LEN , 0xFF, VFLAG_BOOT9 },
